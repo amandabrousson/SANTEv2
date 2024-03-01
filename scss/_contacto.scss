@@ -36,42 +36,47 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
-            .parrafocontacto{
-                text-align: center;
-                font-size: 2.5rem;
-                line-height: 1.5rem;
+            .granContainer{
                 background-color: rgb(52, 96, 185) ;
                 border-radius: 20px;
                 box-shadow: inset 3px 3px 8px rgb(36, 59, 105),
                 inset -3px -3px 8px rgb(80, 122, 204) ;
+                height: 90%;
                 width: 60%;
-            }
-            .redesContainer{
+                text-align: center;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
-                margin-bottom: 10%;
-                #redes{
+                align-items: center;
+                .parrafocontacto{
+                    font-size: 2.5rem;
+                    line-height: 1.5rem;
+                }
+                .redesContainer{
                     display: flex;
-                    font-size: 18px;
-                    align-items: center;
-                    
-                    .logos{
-                        width: 45px;
-                        height: 45px;
-                        margin-right: 10px;
-                        box-shadow: 4px 4px 8px rgb(48, 48, 136);
-                        border-radius: 10px;
-                       
-                    }
-                    #wapp{
-                        border-radius: 10px;
-                    }
-                    #gmail{
-                        border-radius: 5px;
-                        height:38px ;
-                        width: 43px;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-bottom: 10%;
+                    #redes{
+                        display: flex;
+                        font-size: 18px;
+                        align-items: center;
+                        
+                        .logos{
+                            width: 45px;
+                            height: 45px;
+                            margin-right: 10px;
+                            box-shadow: 4px 4px 8px rgb(48, 48, 136);
+                            border-radius: 10px;
+                           
+                        }
+                        #wapp{
+                            border-radius: 10px;
+                        }
+                        #gmail{
+                            border-radius: 5px;
+                            height:38px ;
+                            width: 43px;
+                        }
                     }
                 }
             }
