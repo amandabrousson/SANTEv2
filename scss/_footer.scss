@@ -7,4 +7,10 @@
     color: rgb(42, 41, 41);
   }}
 
+  @media (max-width: 426px){
+
+    .footer{
+      display: none;
+    }
+  }
   

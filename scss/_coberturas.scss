@@ -24,7 +24,9 @@
     
     .coberturascolumnas{
         display: flex;
-
+        .coberturasResponsive{
+            display: none;
+        }
         .columnaomint{
             #img1{
                 display: flex;
@@ -120,6 +122,48 @@
             text-decoration:underline;
         }
 
+}
+
+@media (max-width: 426px){
+
+    #coberturas{
+        height: 400px;
+        background: linear-gradient(rgba(0, 119, 182, 1),rgba(2, 62, 138, 1) );
+        h2{
+            font-size: 24px;
+            color:rgba(72, 202, 228, 1) ;
+        }
+        .coberturascolumnas{
+            display: flex;
+            height: 214px;
+            .coberturasResponsive{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 100%;
+                img{
+                    width: 112px;
+                    height: 112px;
+                }
+            }
+            .columnaomint{
+                display: none;
+            }
+            .columnaosppra{
+                display: none;
+            }
+        }
+        #parrafo-cobertura{
+            margin-top: 0;
+            margin-bottom: 0;
+            text-decoration: none;
+            font-size: 20px;
+            height: 71px;
+        }
+        .lineacoberturas{
+            display: none;
+        }
+    }
 }
 
 

@@ -84,7 +84,73 @@
     }
 }
 
+@media (max-width: 426px){
 
+    #contacto{
+        background: rgba(2, 62, 138, 1);
+        height: 400px;
+        .titulocontacto{
+            margin: 0;
+            font-size: 24px;
+            height: 37px;
+        }
+        .lineacontacto{
+            display: none;
+        }
+        .columnas-contacto{
+            display: flex;
+            flex-direction: column;
+            iframe{
+                height: 122px;
+                width: 234px;
+                align-self: center;
+                box-shadow: 10px 19px 11px rgba(0, 0, 0, 0.25) ;
+                border-radius: 5px;
+                margin-left: 0;
+                
+            }
+            .filas-contacto{
+                background-color: transparent;
+                .granContainer{
+                    background-color: transparent;
+                    width: 100%;
+                    border-radius: 0;
+                    box-shadow: none;
+                    .parrafocontacto{
+                        margin-left: 4rem;
+                        color: white;
+                        font-size: 14px;
+
+                    }
+                    .redesContainer{
+                        height: 160px;
+                        #redes{
+                            color:rgba(173, 232, 244, 1) ;
+                            font-size: 13px;
+                            width: 400px;
+                            margin-left: 10rem;
+
+                            .logos{
+                                height: 20px;
+                                width: 20px;
+                                border-radius: 1px;
+                                box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+
+                            }
+                            #wapp{
+                                border-radius: 5px;
+                            }
+                            #gmail{
+                                height: 17px;
+                                width: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+       }
+    }
+}
 
 
 // #formulario{

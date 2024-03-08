@@ -15,11 +15,17 @@
 
 <body>
     <header>
-        <h1>SANTÉ</h1>
-        <div class="contenedorheader">
-            <img id="imagenheader" src="img/logo_sante2.png" alt="Imagen Sante">
-            <h2>Kinesiología deportiva</h2>
+        <div class="headerContainer">
+            <div class="headerContainer__titulos">
+                <h1>SANTÉ</h1>
+            </div>
+
+            <div class="contenedorheader">
+                <img id="imagenheader" src="img/logo_sante2.png" alt="Imagen Sante">
+                <h2 class="h2">Kinesiología deportiva</h2>
+            </div>
         </div>
+        <img class="menuBurguer" src="./img/menu_burguer.png" />
 
         <div class="navegador">
             <nav class="navegador__indice navegador__contenedor">
@@ -34,7 +40,8 @@
 
     <section id="inicio">
         <div class="hero">
-            <img src="./img/indice.jpg">
+            <img class="imgResponsive" src="./img/inidiceAjustada.png" alt="">
+            <img class="img" src="./img/indice.jpg">
         </div>
         <div class="contenido-hero">
             <a class="boton" href="#contacto">TURNOS</a>
@@ -384,14 +391,27 @@
     </section>
 
     <section id="sobre_nosotros" class="sobre_nosotros">
+        <div class="sobreNosotrosResponsive">
+            <div class="sobreNosotrosResponsive__container1">
+                <img src="./img/emilianoAjustada.png" alt="Emiliano">
+                <div class="sobreNosotrosResponsive__container1__contenido1">
+                    <h3>Licenciado Emiliano Urruchúa</h3>
+                    <p> Egresado de la Universidad Fundación H. A. Barceló en el año 2011. En 2014 culminé mis estudios en el Posgrado en la Universidad Favaloro siendo Especialista en lesiones del deporte, defendiendo mi tesis sobre "Lesiones musculares en el fútbol de élite". En 2022 defendí mi tesis "Protocolo de prevención de lesiones musculares en el fútbol de élite" para obtener mi diplomatura en ciencias del entrenamiento de la Universidad de Rafaela.</p>
+                </div>
+            </div>
+            <div class="sobreNosotrosResponsive__container2">
+                <p>En 2014 comence a trabajar en las divisiones juveniles de Argentinos Juniors, para luego ser kinesiologo de la Primera Division, participando en el Torneo Local y Copa Sudamericana. En 2020 tuve la oportunidad de trabajar en el Club Atlético Platense, siendo el kinesiólogo del plantel profesional en La Liga Nacional de básquet desde la temporada 2020-2021 hasta la temporada 2022-2023. En la actualidad me encuentro trabajando con las selecciones juveniles de fútbol de Venezuela. En 2023 pude cumplir uno de mis mayores sueños, participe de la <b>Copa del Mundo Sub-17 en Indonesia</b>.</p>
+                <img src="./img/emilianoDirigiendoAjustada.png" alt="emiliano dirigiendo">
+            </div>
+        </div>
         <div class="sobre_nosotros-subtitulo">
             <h2>SOBRE NOSOTROS</h2>
             <hr class="linea">
             <div class="sobre_nosotros-pantalladividida">
-                <p>Somos un consultorio de kinesiología especializado en traumatología y deporte, en el que buscamos
+                <p class="parrafo1">Somos un consultorio de kinesiología especializado en traumatología y deporte, en el que buscamos
                     brindar un servicio de calidad en la resolución de las patologías tanto del aparato locomotor como
                     de la columna y lesiones deportivas.</p>
-                <p> Evaluaciones funcionales Isométricas de fuerza y funcionales.</p>
+                <p class="parrafo2"> Evaluaciones funcionales Isométricas de fuerza y funcionales.</p>
                 <span class="hidesn" id="contenidoAdicional1">
                     <p> Deportología - Tratamiento en todo tipo de lesiones deportivas, prevención de lesiones,
                         ejercicios de campo para cada tipo de lesión en grupos o individuales para la vuelta a la
@@ -459,19 +479,21 @@
         <h2 class="titulocoberturas">COBERTURAS</h2>
         <hr class="lineacoberturas">
         <div class="coberturascolumnas">
-
+            <div class="coberturasResponsive">
+                <img src="img/swissmeidcal.png" alt="">
+                <img src="img/omint.jpg" alt="">
+                <img src="img/osde.png" alt="">
+            </div>
             <div class="columnaomint">
                 <img id="img1" src="img/omint.jpg">
                 <div class="textoomint">
                     <p>OMINT - Cobertura con todos los planes.</p>
                 </div>
-
                 <img id="img2" src="img/osde.png">
                 <div class="textoosde">
                     <p>OSDE - Cobertura con todos los planes.</p>
                 </div>
             </div>
-
             <div class="columnaosppra">
                 <img id="img3" src="img/osppra2.png">
                 <div class="textoosppra">
@@ -501,8 +523,8 @@
             <div class="filas-contacto">
                 <div class="granContainer">
                     <span class="parrafocontacto">
-                        <p>Dirección - Arribeños 3728 1B,</p>
-                        <p>Núñez- CABA.</p>
+                        <p>Dirección - Arribeños 3728 1B, Núñez- CABA.</p>
+                        
                     </span>
                     <div class="redesContainer">
                         <span id="redes">

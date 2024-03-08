@@ -4,7 +4,9 @@
     margin-right: 3rem;
     border-radius: 6px; 
     height: auto; //214rem <-- valor con la section toda desplegada            
-
+    .sobreNosotrosResponsive{
+        display: none;
+    }
     .sobre_nosotros-subtitulo{
     margin-top: 2rem;
     text-align: left;
@@ -136,3 +138,90 @@
         }
 
 
+@media (max-width: 426px){
+
+    #sobre_nosotros{
+        background: linear-gradient(rgba(3, 4, 94, 1), rgba(0, 119, 182, 1) );
+        margin: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        .sobreNosotrosResponsive{
+            // background: linear-gradient(rgba(3, 4, 94, 1), rgba(0, 119, 182, 1) );
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            &__container1{
+                display: flex;
+                img{
+                    width: 213px;
+                    height: 400px;
+                }
+                &__contenido1{
+                    color: white;
+                    text-align: center;
+                    padding: 5px;
+                    h3{
+                        font-size: 16px;
+                        font-family: oswald;
+                        font-weight: bold;
+                        margin-top: 0;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+            &__container2{
+                display: flex;
+                p{
+                    color: white;
+                    text-align: center;
+                    padding: 5px;
+                    font-size: 14px;
+                }
+                img{
+                    width: 213px;
+                    height: 400px;
+                }
+            }
+        }
+        .sobre_nosotros-subtitulo{
+            margin: 0;
+            width: auto;
+            padding: 0;
+            h2{
+                display: none;
+            }
+            .sobre_nosotros-pantalladividida{
+                width: auto;
+                margin: 0;
+                padding: 0;
+                .parrafo1{
+                    margin: 0 2rem 7rem 2rem;
+                    font-size: 16px;
+                    color: rgba(202, 240, 248, 1);
+                    text-align: center;
+
+                }
+                .parrafo2{
+                    display: none;
+                }
+                .hidesn{
+                    display: none;
+                }
+                .boton{
+                    display: none;
+                }
+            }
+        }
+        .linea{
+            display: none;
+        }
+        .sobre_nosotros-staff{
+            display: none;
+        }
+    }
+
+
+
+}
