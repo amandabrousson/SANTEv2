@@ -51,39 +51,40 @@ header{
             margin-right: 15rem;
             }
         }
-    .menuBurguer{
+    .menuBurger{
         display: none;
     }
-    .navegador {
-        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,49,121,1) 36%, rgba(0,212,255,1) 100%);
-        border-bottom: 2px solid black;
-        .navegador__contenedor{
+    .navegador__indice{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,49,121,1) 36%, rgba(0,212,255,1) 100%);
+    border-bottom: 2px solid black;
+    .cerrarButton{
+        display: none;
+    }
+        .navList{
             max-width: 150rem;
             font-family: 'Oswald', sans-serif;
-            }
-        .navegador__indice{
-        display:flex;
-        flex-direction: row;
-        margin-left: 12rem;
-        margin-right: 12rem;
-        justify-content: space-between;
-            a {
-            font-size: 2rem;
-            font-weight: bold;
-            padding: 1rem;
-            text-decoration: none;
-            color: azure;
-            }
-            a:hover{
-            background-color: #15cdca;
-            color: black;
-            border-radius: 10px;
-            }
-            a.active{
-            background-color: #15cdca;
-            color: black;
-            border-radius: 10px;
-            }
+            display:flex;
+            flex-direction: row;
+            margin-left: 12rem;
+            margin-right: 12rem;
+            justify-content: space-between;
+                a {
+                font-size: 2rem;
+                font-weight: bold;
+                padding: 1rem;
+                text-decoration: none;
+                color: azure;
+                }
+                a:hover{
+                background-color: #15cdca;
+                color: black;
+                border-radius: 10px;
+                }
+                a.active{
+                background-color: #15cdca;
+                color: black;
+                border-radius: 10px;
+                }
         }
     }     
 }
@@ -126,15 +127,61 @@ header{
 
             }
         }
-        .menuBurguer{
+        .menuBurger{
             display: block;
             margin-right: 5rem;
             margin-left: 3rem;
             padding-left: 2rem;
+            background: transparent;
+            box-shadow: none;
+            border: none;
         }
-        .navegador{
-            display: none;
+        .navegador__indice{
+            opacity: 0;
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 0;
+            background: #10162c;
+            border-bottom: none;
+            max-width: none;
+            padding: 2rem;
+            gap: 1rem;
+            box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+            .cerrarButton{
+                display: block;
+                background: transparent;
+                box-shadow: none;
+                border: none;
+                color: white;
+                font-size: 2rem;
+                margin-top: 2rem;
+
+                
+            }
+            .navList{
+                flex-direction: column;
+                align-items: end;
+                margin: 0;
+                
+                a:hover{
+                    background-color: transparent;
+                    color: white;
+                }
+                a.active{
+                    background-color: transparent;
+                    color: white;
+                }
+            }
+        }
+        .navegador__indice.visible{
+            opacity: 1;
+            visibility: visible;
         }
     }
-    }
+}
 

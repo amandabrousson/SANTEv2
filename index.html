@@ -9,6 +9,7 @@
     <link rel="preload" href="css.css/normalize.css" as="style">
     <!-- <link rel="stylesheet" href="css.css/normalize.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="css/index.css" rel="stylesheet">
 
 </head>
@@ -25,17 +26,19 @@
                 <h2 class="h2">Kinesiología deportiva</h2>
             </div>
         </div>
-        <img class="menuBurguer" src="./img/menu_burguer.png" />
-
-        <div class="navegador">
-            <nav class="navegador__indice navegador__contenedor">
+        <!-- <img class="menuBurguer" src="./img/menu_burguer.png" /> -->
+        <button id="abrirBurger" class="menuBurger" > <img src="./img/menu_burguer.png"/></button>
+        <nav id="navBurger" class="navegador__indice">
+            <button id="cerrarBurger" class="cerrarButton"><i class="bi bi-x-lg"></i></button>
+            <div class="navList">
                 <a href="#inicio" class="active">INICIO</a>
                 <a href="#servicios">SERVICIOS</a>
                 <a href="#sobre_nosotros">SOBRE NOSOTROS</a>
                 <a href="#coberturas">COBERTURAS</a>
                 <a href="#contacto">CONTACTO</a>
-            </nav>
-        </div>
+            </div>
+        </nav>
+
     </header>
 
     <section id="inicio">
@@ -575,6 +578,7 @@
     </footer>
 
     <script src="./JSS/main.js"></script>
+    <script src="./JSS/burger.js"></script>
 
     <script>
         verMenosBtn1.style.display = contenidoAdicional1.style.display === 'block' ? 'inline-block' : 'none';
@@ -695,6 +699,12 @@
             });
             currentSlide4 = index;
         }
+
+        // const abrirMenu = () =>{
+        //     const navBurger = document.querySelectorAll('#navBurger')
+        //     navBurger.classList.add('visible')
+        // }
+
 
 
     </script>
