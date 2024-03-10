@@ -12,3 +12,21 @@ abrirBurger.addEventListener('click', ()=>{
 cerrarBurger.addEventListener('click', ()=>{
     navBurger.classList.remove('visible')
 })
+
+//scroll navbar
+
+let ubicacionPrincipal = window.scrollY
+let header = document.getElementById('header')
+
+window.addEventListener('scroll', ()=> {
+    let ubicacionActual = window.scrollY
+    console.log(ubicacionActual);
+
+    if (ubicacionPrincipal >= ubicacionActual) {
+        header.style.top = '0px'
+    } else {
+        header.style.top = '-80px'
+    }
+
+    ubicacionPrincipal = ubicacionActual
+})

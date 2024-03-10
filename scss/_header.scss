@@ -1,6 +1,8 @@
 html{
     font-size: 55%;
     scroll-behavior: smooth;
+    width: -webkit-fill-available;
+
     }
 
 body{
@@ -92,10 +94,15 @@ header{
 
 @media screen and (max-width: 426px){
     html{
-        width: 400px;
+        height: -webkit-fill-available;
+        width: -webkit-fill-available;
     }
     body{
-        width: 400px;
+        width: 425px;
+        height: -webkit-fill-available;
+        width: -webkit-fill-available;
+
+
         
         header{
             width: auto;
