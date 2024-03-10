@@ -76,7 +76,8 @@ header {
 
 @media screen and (max-width: 426px) {
   body {
-    width: 465px; }
+    width: 100%;
+    margin: 0; }
     body header {
       position: absolute;
       width: 100%;
