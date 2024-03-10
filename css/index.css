@@ -78,10 +78,11 @@ header {
   body {
     width: 425px; }
     body header {
-      width: auto;
+      position: absolute;
+      width: 100%;
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-between;
       height: 170px;
       background-color: #03045e; }
       body header h1 {
@@ -99,8 +100,6 @@ header {
         margin-right: 0rem; }
       body header .menuBurger {
         display: block;
-        margin-right: 3.3rem;
-        margin-left: 3rem;
         padding-left: 2rem;
         background: transparent;
         box-shadow: none;
@@ -204,7 +203,7 @@ header {
 
 @media (max-width: 426px) {
   #inicio {
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: column-reverse;
     background: linear-gradient(#03045e, #03045e);

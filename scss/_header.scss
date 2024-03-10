@@ -102,10 +102,11 @@ header{
 
         
         header{
-            width: auto;
+            position: absolute;
+            width: 100%;
             display: flex;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-between;
             height: 170px;
             background-color: rgba(3, 4, 94, 1);
             
@@ -132,9 +133,10 @@ header{
             }
             .menuBurger{
                 display: block;
-                margin-right: 3.3rem;
-                margin-left: 3rem;
+                // margin-right: 3.3rem;
+                // margin-left: 3rem;
                 padding-left: 2rem;
+                // padding-right: 3rem ;
                 background: transparent;
                 box-shadow: none;
                 border: none;
