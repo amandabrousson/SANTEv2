@@ -104,6 +104,7 @@ header {
         margin-right: 0rem; }
       body header .menuBurger {
         display: block;
+        margin-right: 3.3rem;
         margin-left: 3rem;
         padding-left: 2rem;
         background: transparent;
@@ -837,12 +838,12 @@ header {
       #sobre_nosotros .sobreNosotrosResponsive__container1 {
         display: flex; }
         #sobre_nosotros .sobreNosotrosResponsive__container1 img {
-          width: 213px;
+          width: 50%;
           height: 400px; }
         #sobre_nosotros .sobreNosotrosResponsive__container1__contenido1 {
           color: white;
           text-align: center;
-          padding: 5px; }
+          padding: 10px; }
           #sobre_nosotros .sobreNosotrosResponsive__container1__contenido1 h3 {
             font-size: 16px;
             font-family: oswald;
