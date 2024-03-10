@@ -90,9 +90,9 @@ header{
 }
    
 
-@media (max-width: 426px){
+@media screen and (max-width: 426px){
     body{
-        width: 450px;
+        width: 425px;
         
     }
     header{
