@@ -91,94 +91,97 @@ header{
    
 
 @media screen and (max-width: 426px){
-    body{
-        width: 425px;
-        
+    html{
+        width: 400px;
     }
-    header{
-        width: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        height: 170px;
-        background-color: rgba(3, 4, 94, 1);
+    body{
+        width: 400px;
         
-        h1{
-           margin-left: 15rem;
-           font-size: 32px;
-        }
-        .h2Responsive{
-            display: block;
-        }
-        .contenedorheader{
-            #imagenheader{
-                margin-right: 8rem;
-            }
-            h2{
-                
-                margin-left: 0rem;
-                margin-right: 15px;
-                margin-bottom: 0px;
-                font-size: 2rem;
-                margin-right: 0rem;
-
-            }
-        }
-        .menuBurger{
-            display: block;
-            margin-right: 5rem;
-            margin-left: 3rem;
-            padding-left: 2rem;
-            background: transparent;
-            box-shadow: none;
-            border: none;
-        }
-        .navegador__indice{
-            opacity: 0;
-            visibility: hidden;
+        header{
+            width: auto;
             display: flex;
-            flex-direction: column;
-            align-items: end;
-            position: absolute;
-            top: 0;
-            right: 0;
-            margin: 0;
-            background: #10162c;
-            border-bottom: none;
-            max-width: none;
-            padding: 2rem;
-            gap: 1rem;
-            box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-            .cerrarButton{
+            align-items: center;
+            justify-content: space-around;
+            height: 170px;
+            background-color: rgba(3, 4, 94, 1);
+            
+            h1{
+               margin-left: 15rem;
+               font-size: 32px;
+            }
+            .h2Responsive{
                 display: block;
+            }
+            .contenedorheader{
+                #imagenheader{
+                    margin-right: 8rem;
+                }
+                h2{
+                    
+                    margin-left: 0rem;
+                    margin-right: 15px;
+                    margin-bottom: 0px;
+                    font-size: 2rem;
+                    margin-right: 0rem;
+    
+                }
+            }
+            .menuBurger{
+                display: block;
+                // margin-right: 5rem;
+                margin-left: 3rem;
+                padding-left: 2rem;
                 background: transparent;
                 box-shadow: none;
                 border: none;
-                color: white;
-                font-size: 2rem;
-                margin-top: 2rem;
-
-                
             }
-            .navList{
+            .navegador__indice{
+                opacity: 0;
+                visibility: hidden;
+                display: flex;
                 flex-direction: column;
                 align-items: end;
+                position: absolute;
+                top: 0;
+                right: 0;
                 margin: 0;
-                
-                a:hover{
-                    background-color: transparent;
+                background: #10162c;
+                border-bottom: none;
+                max-width: none;
+                padding: 2rem;
+                gap: 1rem;
+                box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+                .cerrarButton{
+                    display: block;
+                    background: transparent;
+                    box-shadow: none;
+                    border: none;
                     color: white;
+                    font-size: 2rem;
+                    margin-top: 2rem;
+    
+                    
                 }
-                a.active{
-                    background-color: transparent;
-                    color: white;
+                .navList{
+                    flex-direction: column;
+                    align-items: end;
+                    margin: 0;
+                    
+                    a:hover{
+                        background-color: transparent;
+                        color: white;
+                    }
+                    a.active{
+                        background-color: transparent;
+                        color: white;
+                    }
                 }
             }
-        }
-        .navegador__indice.visible{
-            opacity: 1;
-            visibility: visible;
+            .navegador__indice.visible{
+                opacity: 1;
+                visibility: visible;
+            }
         }
     }
-}
 
+    }    
