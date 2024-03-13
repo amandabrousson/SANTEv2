@@ -834,7 +834,7 @@ header {
         display: flex; }
         #sobre_nosotros .sobreNosotrosResponsive__container1 img {
           width: 50%;
-          height: 400px; }
+          height: inherit; }
         #sobre_nosotros .sobreNosotrosResponsive__container1__contenido1 {
           color: white;
           text-align: center;
@@ -855,7 +855,7 @@ header {
           font-size: 14px; }
         #sobre_nosotros .sobreNosotrosResponsive__container2 img {
           width: 50%;
-          height: 50%; }
+          height: inherit; }
     #sobre_nosotros .sobre_nosotros-subtitulo {
       margin: 0;
       width: auto;

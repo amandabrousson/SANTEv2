@@ -154,7 +154,7 @@
                 display: flex;
                 img{
                     width: 50%;
-                    height: 400px;
+                    height: inherit
                 }
                 &__contenido1{
                     color: white;
@@ -181,7 +181,7 @@
                 }
                 img{
                     width: 50%;
-                    height: 50%;
+                    height: inherit;
                 }
             }
         }
