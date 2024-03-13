@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box; }
+
 html {
   font-size: 55%;
   scroll-behavior: smooth;
@@ -74,7 +77,7 @@ header {
         color: black;
         border-radius: 10px; }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 465px) {
   body {
     width: 100%;
     margin: 0; }
@@ -202,7 +205,7 @@ header {
   width: 35rem;
   height: 25rem; }
 
-@media (max-width: 426px) {
+@media (max-width: 465px) {
   #inicio {
     width: 100%;
     display: flex;
@@ -709,7 +712,7 @@ header {
   #texto4 {
     font-size: 16px; } }
 
-@media (max-width: 426px) {
+@media (max-width: 465px) {
   #servicios {
     display: none; } }
 
@@ -820,7 +823,7 @@ header {
   .sobre_nosotros {
     margin-top: 55rem; } }
 
-@media (max-width: 426px) {
+@media (max-width: 465px) {
   #sobre_nosotros {
     background: linear-gradient(#03045e, #0077b6);
     margin: 0;
@@ -975,7 +978,7 @@ header {
     margin-top: 13rem;
     text-decoration: underline; }
 
-@media (max-width: 426px) {
+@media (max-width: 465px) {
   #coberturas {
     height: 400px;
     background: linear-gradient(#0077b6, #023e8a); }
@@ -1076,7 +1079,7 @@ header {
               height: 38px;
               width: 43px; }
 
-@media (max-width: 426px) {
+@media (max-width: 465px) {
   #contacto {
     background: #023e8a;
     height: 400px; }
@@ -1132,6 +1135,6 @@ header {
     font-size: 1.5rem;
     color: #2a2929; }
 
-@media (max-width: 426px) {
+@media (max-width: 465px) {
   .footer {
     display: none; } }
