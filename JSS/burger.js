@@ -6,7 +6,7 @@ const cerrarBurger = document.getElementById('cerrarBurger')
 
 abrirBurger.addEventListener('click', ()=>{
     console.log('click');
-    navBurger.classList.add('visible')
+    navBurger.classList.toggle('visible')
 })
 
 cerrarBurger.addEventListener('click', ()=>{
@@ -30,3 +30,13 @@ window.addEventListener('scroll', ()=> {
 
     ubicacionPrincipal = ubicacionActual
 })
+
+const links = document.querySelectorAll('#links')
+
+links.forEach((link) => {
+    link.addEventListener('click', () => {
+        console.log('clickClose');
+        navBurger.classList.remove('visible')
+    })
+});
+
